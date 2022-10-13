@@ -10,6 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&display=swap" rel="stylesheet">
     <!-- Fontawesome Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Jquery & Counter -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
 
     <!-- Google fonts -->
 
@@ -252,25 +260,25 @@
 
     <!-- Stats Section -->
 
-    <section class="text-white bg-pink-500 body-font">
+    <section class="text-white bg-pink-500 body-font counter-up">
         <div class="container lg:px-20 px-5 py-12 mx-auto">
             <div class="flex flex-wrap -m-4 text-center">
                 <div class="p-4 sm:w-1/4 w-1/2">
-                    <h2 class="title-font font-medium sm:text-4xl text-5xl text-gray-900 pb-3">50+ </h2>
+                    <h2 class="title-font font-medium sm:text-4xl text-5xl text-gray-900 pb-3 counter">50</h2>
                     <p class="leading-relaxed">PROJECTS COMPLETED
                     </p>
                 </div>
                 <div class="p-4 sm:w-1/4 w-1/2">
-                    <h2 class="title-font font-medium sm:text-4xl text-5xl text-gray-900 pb-3">15</h2>
+                    <h2 class="title-font font-medium sm:text-4xl text-5xl text-gray-900 pb-3 counter">15</h2>
                     <p class="leading-relaxed">YEARS OF EXPERIENCE
                     </p>
                 </div>
                 <div class="p-4 sm:w-1/4 w-1/2">
-                    <h2 class="title-font font-medium sm:text-4xl text-5xl text-gray-900 pb-3">100+</h2>
+                    <h2 class="title-font font-medium sm:text-4xl text-5xl text-gray-900 pb-3 counter">100</h2>
                     <p class="leading-relaxed">EMPLOYESS</p>
                 </div>
                 <div class="p-4 sm:w-1/4 w-1/2">
-                    <h2 class="title-font font-medium sm:text-4xl text-5xl	text-gray-900 pb-3">10+</h2>
+                    <h2 class="title-font font-medium sm:text-4xl text-5xl	text-gray-900 pb-3 counter">10</h2>
                     <p class="leading-relaxed">CLIENTS</p>
                 </div>
             </div>
@@ -712,7 +720,14 @@
     </footer>
 
 
-
+    <script>
+        $(document).ready(function() {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1200
+            });
+        });
+     </script>
 
 </body>
 
